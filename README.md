@@ -1,1 +1,3 @@
-"# ƒ‰ƒCƒuƒ‰ƒŠƒCƒ“ƒXƒg[ƒ‹" 
+# react-native-webview
+pod installãŒå¿…è¦
+

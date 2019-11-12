@@ -11,6 +11,7 @@ import StartScreen from "../screens/StartScreen";
 import DetailScreen from "../screens/DetailScreen";
 import SectionListScreen from "../screens/SectionListScreen";    
 import FlatListScreen from "../screens/FlatListScreen";
+import FlatListDetailScreen from "../screens/FlatListDetailScreen";
 
 //起動画面
 const Start = {
@@ -44,12 +45,21 @@ const FlatList = {
     }
 }
 
+//FlatList
+const FlatListDetail = {
+    screen: FlatListDetailScreen,
+    navigationOptions: ({ navigation }) => {
+        return {title: 'FlatList詳細画面'}
+    }
+}
+
 const MainNavigation = createStackNavigator(
     {
         Start,
         Detail,
         SectionList,
         FlatList,
+        FlatListDetail,
     },
     {
         mode: 'card',
